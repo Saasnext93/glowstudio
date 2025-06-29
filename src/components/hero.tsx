@@ -5,7 +5,7 @@ import { AnimatedSection } from "./animated-section";
 
 export default function Hero() {
   return (
-    <section className="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center text-center overflow-hidden">
+    <section className="relative w-full h-[80vh] min-h-[500px] md:min-h-[600px] flex items-center justify-center text-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image
           src="https://images.pexels.com/photos/2373201/pexels-photo-2373201.jpeg"

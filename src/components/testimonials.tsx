@@ -61,7 +61,7 @@ export default function Testimonials() {
                 <CarouselItem key={testimonial.name} className="md:basis-1/2 lg:basis-1/2">
                   <div className="p-2">
                     <Card className="h-full">
-                      <CardContent className="flex flex-col items-center text-center justify-center p-6 space-y-4">
+                      <CardContent className="flex flex-col items-center text-center justify-center p-6 space-y-4 min-h-[250px]">
                         <p className="text-foreground/80 italic">
                           &ldquo;{testimonial.text}&rdquo;
                         </p>
@@ -81,8 +81,8 @@ export default function Testimonials() {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+            <CarouselPrevious className="left-4 md:-left-12" />
+            <CarouselNext className="right-4 md:-right-12" />
           </Carousel>
         </AnimatedSection>
       </div>

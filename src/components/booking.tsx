@@ -250,7 +250,7 @@ export default function Booking() {
       </section>
 
       <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
-        <DialogContent className="sm:max-w-[425px]">
+        <DialogContent className="sm:max-w-md">
           <DialogHeader>
             <DialogTitle className="text-2xl font-headline text-center">Booking Confirmed!</DialogTitle>
             <DialogDescription className="text-center">
@@ -259,20 +259,20 @@ export default function Booking() {
           </DialogHeader>
           {bookingDetails && (
             <div className="grid gap-4 py-4">
-              <div className="grid grid-cols-[100px_1fr] items-center gap-4">
-                <span className="text-right font-medium text-muted-foreground">Name:</span>
+              <div className="flex flex-col gap-1 sm:grid sm:grid-cols-[100px_1fr] sm:items-center sm:gap-4">
+                <span className="text-left sm:text-right font-medium text-muted-foreground">Name:</span>
                 <span>{bookingDetails.name}</span>
               </div>
-              <div className="grid grid-cols-[100px_1fr] items-center gap-4">
-                <span className="text-right font-medium text-muted-foreground">Email:</span>
+              <div className="flex flex-col gap-1 sm:grid sm:grid-cols-[100px_1fr] sm:items-center sm:gap-4">
+                <span className="text-left sm:text-right font-medium text-muted-foreground">Email:</span>
                 <span>{bookingDetails.email}</span>
               </div>
-              <div className="grid grid-cols-[100px_1fr] items-center gap-4">
-                <span className="text-right font-medium text-muted-foreground">Service:</span>
+              <div className="flex flex-col gap-1 sm:grid sm:grid-cols-[100px_1fr] sm:items-center sm:gap-4">
+                <span className="text-left sm:text-right font-medium text-muted-foreground">Service:</span>
                 <span>{bookingDetails.service}</span>
               </div>
-              <div className="grid grid-cols-[100px_1fr] items-center gap-4">
-                <span className="text-right font-medium text-muted-foreground">Date:</span>
+              <div className="flex flex-col gap-1 sm:grid sm:grid-cols-[100px_1fr] sm:items-center sm:gap-4">
+                <span className="text-left sm:text-right font-medium text-muted-foreground">Date:</span>
                 <span>{format(bookingDetails.date, "PPP")}</span>
               </div>
             </div>
