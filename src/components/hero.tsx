@@ -8,9 +8,8 @@ export default function Hero() {
     <section className="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center text-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://placehold.co/1920x1080.png"
-          alt="Abstract background"
-          data-ai-hint="abstract pastel"
+          src="https://images.pexels.com/photos/2373201/pexels-photo-2373201.jpeg"
+          alt="Serene landscape background"
           fill
           className="object-cover"
           priority
